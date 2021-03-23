@@ -10146,12 +10146,14 @@ header.masthead .masthead-heading {
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
+    color: orange;
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
+    color: orange;
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
