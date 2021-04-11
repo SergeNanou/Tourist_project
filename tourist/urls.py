@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import  include, url
 from land.views import landy
+from estimate.views import post_new
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', landy, name='landy'),
+    path('post/new/', post_new, name='post_new'),
+
 ]
