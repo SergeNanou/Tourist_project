@@ -3,7 +3,14 @@
 {% block content %}
    
     <form method="POST" class="post-form mt-5">{% csrf_token %}
-        {{ form.as_table }} 
+        {% for field in form %}
+            <div class="fieldWrapper mt-3">
+                {{ field.errors }}
+                {{field.label_tag }} {{ field}}
+        
+            </div>
+
+        {% endfor %}
         <br>
         <button type="submit" class="btn btn-warning">Cout Estimé</button>
     </form>
